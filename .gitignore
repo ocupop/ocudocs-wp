@@ -1,0 +1,19 @@
+# WordPress
+wordpress/wp-config.php
+wordpress/wp-content/upgrade
+wordpress/wp-content/uploads
+
+# Workflow
+.sass-cache/
+codekit-config.json
+error_log
+
+# OS-generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
