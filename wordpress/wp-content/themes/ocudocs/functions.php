@@ -34,7 +34,16 @@ function nav_id_filter($id, $item ) {
 }
 add_filter('nav_menu_item_id', 'nav_id_filter', 10, 2);
 
-// Remove menus from sidebar.
+// Remove widgets from admin dashboard.
+function remove_dashboard_widget() {
+  remove_meta_box('dashboard_right_now', 'dashboard', 'normal');
+  // remove_meta_box('dashboard_activity', 'dashboard', 'normal');
+  remove_meta_box('dashboard_quick_press', 'dashboard', 'side');
+  remove_meta_box('dashboard_primary', 'dashboard', 'side');
+}
+add_action('wp_dashboard_setup', 'remove_dashboard_widget' );
+
+// Remove menus from admin sidebar.
 function remove_menus() {
   remove_menu_page('edit.php');
   remove_menu_page('link-manager.php');
