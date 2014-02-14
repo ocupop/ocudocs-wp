@@ -1,0 +1,186 @@
+$tablet: 500px
+$desktop: 1000px
+
+$font-family-heading: Helvetica, sans-serif
+$font-family-body: Georgia, serif
+
+$font-size: 16px
+$font-size-small: 12px
+
+$line: $font-size * 1.5
+
+$text-color-dark: #333
+$text-color-medium: #666
+$text-color-light: #aaa
+$text-color-lighter: #eee
+
+$link-color-gray: #888
+$link-color-red: #f00
+
+$border-color-dark: #90928f
+$border-color-light: #e9edec
+
+*
+  @include box-sizing(border-box)
+  position: relative
+
+a
+  color: $link-color-gray
+  border-bottom: 1px dotted $link-color-gray
+  text-decoration: none
+
+  &:hover
+    color: $link-color-red
+    border-bottom: 1px dotted $link-color-red
+
+input
+  margin: 0
+
+html
+  background: white
+  color: $text-color-dark
+  font-family: $font-family-body
+  font-size: $font-size
+  line-height: $line
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  font-family: $font-family-heading
+  font-weight: bold
+  line-height: 1
+
+h1
+  font-size: 38px
+  margin-bottom: $line
+  text-transform: uppercase
+
+h2
+  border-top: 1px solid $text-color-lighter
+  font-size: $line*1.25
+  margin: $line 0 $line
+  padding: $line 0 0
+
+
+h3
+  color: $text-color-medium
+  font-size: $line*0.75
+  margin: $line*1.25 0 $line/2
+
+p
+  margin: $line 0
+
+strong
+  font-weight: bold
+
+em
+  font-style: italic
+
+// Layout
+
+.site-container
+  margin: $line/2 auto
+  max-width: $desktop
+
+.site-sidebar
+  float: left
+  margin-right: 50px
+  width: 250px
+
+header.site-header
+  font-family: $font-family-heading
+  margin-bottom: $line/2
+
+  span
+    font-size: 38px
+    text-transform: uppercase
+
+  a,
+  a:hover
+    border-bottom: none
+    color: inherit
+
+  img
+    vertical-align: middle
+    width: 40px
+    opacity: .75
+
+nav.site-nav
+  ul
+    list-style: none
+
+  li
+    a
+      border-top: 1px dotted $text-color-lighter
+      border-bottom: none !important
+      font-family: $font-family-heading
+      font-size: 90%
+      display: block
+      margin: 0
+      padding: .25em 0
+
+    &:first-child
+      border-bottom: 1px dotted $text-color-light
+      margin-bottom: $line/3
+      padding-bottom: $line/3
+
+      a,
+      & + li a
+        border-top: 0
+
+    &.project
+      border-top: 1px dotted $text-color-light
+      margin-top: $line/3
+      padding-top: $line/3
+
+      a
+        border-top: none
+
+      // Hack-y reset back to the non-.project styles because :first-of-type doesn't seem to work.
+      & + .project
+        border-top: inherit
+        margin-top: inherit
+        padding-top: inherit
+
+        a
+          border-top: 1px dotted $text-color-lighter
+
+
+article
+  float: left
+  width: 700px
+
+  ul,
+  ol
+    margin-left: $line
+
+  li
+    list-style: square
+    margin: $line*0.5 0
+
+    li
+      margin: $line*0.1 0
+
+code
+  background: $text-color-lighter
+  border: 1px solid #ddd
+  border-radius: 3px
+  font-size: 13px
+  margin: 0 .25em
+  padding: 2px 4px
+
+pre code
+  display: block
+  font-size: 13px
+  padding: 10px
+
+.important
+  background: #ff8 url(http://www.mikesfreegifs.com/main4/underconstruction/atwork89.gif) center 50px no-repeat
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
+  font-weight: bold
+  margin: 0 0 2em 0
+  padding: 1em 1em 100px 1em
+  text-align: center

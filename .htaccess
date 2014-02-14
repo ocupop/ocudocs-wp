@@ -1,0 +1,9 @@
+Options -Indexes +FollowSymLinks +MultiViews
+
+ErrorDocument 404 /404.html
+ErrorDocument 403 /403.html
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^wiki/?$ /ocudocs [L]
+</IfModule>

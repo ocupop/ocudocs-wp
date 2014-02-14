@@ -1,0 +1,283 @@
+/* Theme Name: Ocudocs
+ * Theme URI:
+ * Description:
+ * Author: Matthew McVickar for Ocupop
+ * Author URI:
+ * Version: 1.0
+ */
+/* line 17, ../../../../../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, ../../../../../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, ../../../../../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, ../../../../../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, ../../../../../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, ../../../../../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, ../../../../../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, ../../../../../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, ../../../../../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+/* line 3, sass/_base.sass */
+* {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 7, sass/_base.sass */
+::selection {
+  color: white; }
+
+/* line 11, sass/_base.sass */
+html {
+  background-color: white;
+  color: #333333; }
+
+/* line 16, sass/_base.sass */
+body {
+  width: 100%; }
+
+/* line 19, sass/_base.sass */
+a {
+  text-decoration: none; }
+
+/* line 23, sass/_base.sass */
+strong {
+  font-weight: bold; }
+
+/* line 26, sass/_base.sass */
+em {
+  font-style: italic; }
+
+/* line 29, sass/_base.sass */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "FrutigerLTW01-75Black", sans-serif;
+  font-weight: normal;
+  line-height: 1.4; }
+
+/* line 23, sass/_old.sass */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative; }
+
+/* line 27, sass/_old.sass */
+a {
+  color: #888888;
+  border-bottom: 1px dotted #888888;
+  text-decoration: none; }
+  /* line 32, sass/_old.sass */
+  a:hover {
+    color: red;
+    border-bottom: 1px dotted red; }
+
+/* line 36, sass/_old.sass */
+input {
+  margin: 0; }
+
+/* line 39, sass/_old.sass */
+html {
+  background: white;
+  color: #333333;
+  font-family: Georgia, serif;
+  font-size: 16px;
+  line-height: 24px; }
+
+/* line 46, sass/_old.sass */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  line-height: 1; }
+
+/* line 56, sass/_old.sass */
+h1 {
+  font-size: 38px;
+  margin-bottom: 24px;
+  text-transform: uppercase; }
+
+/* line 61, sass/_old.sass */
+h2 {
+  border-top: 1px solid #eeeeee;
+  font-size: 30px;
+  margin: 24px 0 24px;
+  padding: 24px 0 0; }
+
+/* line 68, sass/_old.sass */
+h3 {
+  color: #666666;
+  font-size: 18px;
+  margin: 30px 0 12px; }
+
+/* line 73, sass/_old.sass */
+p {
+  margin: 24px 0; }
+
+/* line 76, sass/_old.sass */
+strong {
+  font-weight: bold; }
+
+/* line 79, sass/_old.sass */
+em {
+  font-style: italic; }
+
+/* line 84, sass/_old.sass */
+.site-container {
+  margin: 12px auto;
+  max-width: 1000px; }
+
+/* line 88, sass/_old.sass */
+.site-sidebar {
+  float: left;
+  margin-right: 50px;
+  width: 250px; }
+
+/* line 93, sass/_old.sass */
+header.site-header {
+  font-family: Helvetica, sans-serif;
+  margin-bottom: 12px; }
+  /* line 97, sass/_old.sass */
+  header.site-header span {
+    font-size: 38px;
+    text-transform: uppercase; }
+  /* line 101, sass/_old.sass */
+  header.site-header a,
+  header.site-header a:hover {
+    border-bottom: none;
+    color: inherit; }
+  /* line 106, sass/_old.sass */
+  header.site-header img {
+    vertical-align: middle;
+    width: 40px;
+    opacity: 0.75; }
+
+/* line 112, sass/_old.sass */
+nav.site-nav ul {
+  list-style: none; }
+/* line 116, sass/_old.sass */
+nav.site-nav li a {
+  border-top: 1px dotted #eeeeee;
+  border-bottom: none !important;
+  font-family: Helvetica, sans-serif;
+  font-size: 90%;
+  display: block;
+  margin: 0;
+  padding: 0.25em 0; }
+/* line 125, sass/_old.sass */
+nav.site-nav li:first-child {
+  border-bottom: 1px dotted #aaaaaa;
+  margin-bottom: 8px;
+  padding-bottom: 8px; }
+  /* line 130, sass/_old.sass */
+  nav.site-nav li:first-child a, nav.site-nav li:first-child + li a {
+    border-top: 0; }
+/* line 134, sass/_old.sass */
+nav.site-nav li.project {
+  border-top: 1px dotted #aaaaaa;
+  margin-top: 8px;
+  padding-top: 8px; }
+  /* line 139, sass/_old.sass */
+  nav.site-nav li.project a {
+    border-top: none; }
+  /* line 143, sass/_old.sass */
+  nav.site-nav li.project + .project {
+    border-top: inherit;
+    margin-top: inherit;
+    padding-top: inherit; }
+    /* line 148, sass/_old.sass */
+    nav.site-nav li.project + .project a {
+      border-top: 1px dotted #eeeeee; }
+
+/* line 152, sass/_old.sass */
+article {
+  float: left;
+  width: 700px; }
+  /* line 156, sass/_old.sass */
+  article ul,
+  article ol {
+    margin-left: 24px; }
+  /* line 160, sass/_old.sass */
+  article li {
+    list-style: square;
+    margin: 12px 0; }
+    /* line 164, sass/_old.sass */
+    article li li {
+      margin: 2.4px 0; }
+
+/* line 167, sass/_old.sass */
+code {
+  background: #eeeeee;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  font-size: 13px;
+  margin: 0 0.25em;
+  padding: 2px 4px; }
+
+/* line 175, sass/_old.sass */
+pre code {
+  display: block;
+  font-size: 13px;
+  padding: 10px; }
+
+/* line 180, sass/_old.sass */
+.important {
+  background: #ffff88 url(http://www.mikesfreegifs.com/main4/underconstruction/atwork89.gif) center 50px no-repeat;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  margin: 0 0 2em 0;
+  padding: 1em 1em 100px 1em;
+  text-align: center; }
