@@ -5,5 +5,5 @@ ErrorDocument 403 /403.html
 
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteRule ^wiki/?$ /ocudocs [L]
+RewriteRule ^admin/?$ /wordpress/wp-admin [L]
 </IfModule>
