@@ -100,7 +100,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "FrutigerLTW01-75Black", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.4; }
 
@@ -218,47 +218,26 @@ nav.site-nav li a {
   margin: 0;
   padding: 0.25em 0; }
 /* line 125, sass/_old.sass */
-nav.site-nav li:first-child {
-  border-bottom: 1px dotted #aaaaaa;
-  margin-bottom: 8px;
-  padding-bottom: 8px; }
-  /* line 130, sass/_old.sass */
-  nav.site-nav li:first-child a, nav.site-nav li:first-child + li a {
-    border-top: 0; }
-/* line 134, sass/_old.sass */
-nav.site-nav li.project {
-  border-top: 1px dotted #aaaaaa;
-  margin-top: 8px;
-  padding-top: 8px; }
-  /* line 139, sass/_old.sass */
-  nav.site-nav li.project a {
-    border-top: none; }
-  /* line 143, sass/_old.sass */
-  nav.site-nav li.project + .project {
-    border-top: inherit;
-    margin-top: inherit;
-    padding-top: inherit; }
-    /* line 148, sass/_old.sass */
-    nav.site-nav li.project + .project a {
-      border-top: 1px dotted #eeeeee; }
+nav.site-nav .children li a {
+  padding-left: 24px; }
 
-/* line 152, sass/_old.sass */
+/* line 128, sass/_old.sass */
 article {
   float: left;
   width: 700px; }
-  /* line 156, sass/_old.sass */
+  /* line 132, sass/_old.sass */
   article ul,
   article ol {
     margin-left: 24px; }
-  /* line 160, sass/_old.sass */
+  /* line 136, sass/_old.sass */
   article li {
     list-style: square;
     margin: 12px 0; }
-    /* line 164, sass/_old.sass */
+    /* line 140, sass/_old.sass */
     article li li {
       margin: 2.4px 0; }
 
-/* line 167, sass/_old.sass */
+/* line 143, sass/_old.sass */
 code {
   background: #eeeeee;
   border: 1px solid #dddddd;
@@ -267,13 +246,13 @@ code {
   margin: 0 0.25em;
   padding: 2px 4px; }
 
-/* line 175, sass/_old.sass */
+/* line 151, sass/_old.sass */
 pre code {
   display: block;
   font-size: 13px;
   padding: 10px; }
 
-/* line 180, sass/_old.sass */
+/* line 156, sass/_old.sass */
 .important {
   background: #ffff88 url(http://www.mikesfreegifs.com/main4/underconstruction/atwork89.gif) center 50px no-repeat;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;

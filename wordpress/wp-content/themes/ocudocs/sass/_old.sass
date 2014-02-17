@@ -122,32 +122,8 @@ nav.site-nav
       margin: 0
       padding: .25em 0
 
-    &:first-child
-      border-bottom: 1px dotted $text-color-light
-      margin-bottom: $line/3
-      padding-bottom: $line/3
-
-      a,
-      & + li a
-        border-top: 0
-
-    &.project
-      border-top: 1px dotted $text-color-light
-      margin-top: $line/3
-      padding-top: $line/3
-
-      a
-        border-top: none
-
-      // Hack-y reset back to the non-.project styles because :first-of-type doesn't seem to work.
-      & + .project
-        border-top: inherit
-        margin-top: inherit
-        padding-top: inherit
-
-        a
-          border-top: 1px dotted $text-color-lighter
-
+  .children li a
+    padding-left: $line
 
 article
   float: left
