@@ -281,3 +281,20 @@ article {
       font-weight: 400;
       margin-right: 4.8px;
       vertical-align: -3px; }
+
+/* line 93, sass/_page.sass */
+#toc_container {
+  float: right;
+  margin: 24px 0 0 24px;
+  z-index: 99; }
+  /* line 98, sass/_page.sass */
+  #toc_container .toc_title {
+    display: none; }
+  /* line 101, sass/_page.sass */
+  #toc_container .toc_list {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    margin-top: 0 !important; }
+    /* line 106, sass/_page.sass */
+    #toc_container .toc_list a {
+      border: 0; }
