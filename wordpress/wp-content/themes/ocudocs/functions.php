@@ -72,7 +72,7 @@ function list_pages_in_category($categoryName) {
 
   echo "<ul>";
   foreach ($posts as $post)
-    echo "<li><a href=\"" . $post->post_name . "\">" . $post->post_title . "</a></li>";
+    echo "<li><a href=\"" . get_bloginfo('url') . "/" . $post->post_name . "\">" . $post->post_title . "</a></li>";
   echo "</ul>";
 }
 
@@ -87,7 +87,7 @@ function list_clients_and_their_pages() {
 
   echo "<ul class=\"clients\">";
   foreach ($clients as $client) {
-    echo "<li class=\"client-title\"><a href=\"" . home_url() . "/" . $client->post_name . "\">" . $client->post_title . "</a></li>";
+    echo "<li class=\"client-title\"><a href=\"" . get_bloginfo('url') . "/" . $client->post_name . "\">" . $client->post_title . "</a></li>";
     echo "<li>
             <ul>";
 
@@ -100,7 +100,7 @@ function list_clients_and_their_pages() {
     $client_pages = get_posts($client_pages_args);
 
     foreach($client_pages as $client_page) {
-      echo "<li><a href=\"" . home_url() . "/" . $client_page->post_name . "\">" . $client_page->post_title . "</a></li>";
+      echo "<li><a href=\"" . get_bloginfo('url') . "/" . $client->post_name . "/" . $client_page->post_name . "\">" . $client_page->post_title . "</a></li>";
     }
     echo "  </ul>
           </li>";
