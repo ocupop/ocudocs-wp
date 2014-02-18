@@ -11,33 +11,28 @@
 @import "compass/reset"
 
 // Fonts
-$heading-font:    "Helvetica Neue", Helvetica, Arial, sans-serif
-$navigation-font: "Helvetica Neue", Helvetica, Arial, sans-serif
-$body-font:       Georgia, "Times New Roman", Times, sans-serif
+$font-heading:    "Helvetica Neue", Helvetica, Arial, sans-serif
+$font-navigation: "Helvetica Neue", Helvetica, Arial, sans-serif
+$font-body:       Georgia, "Times New Roman", Times, sans-serif
 
 // Sizes
-$desktop-width: 1000px
-$column:        $desktop-width / 3
-$gutter:        10px
-$font-size:     16px
-$line:          24px
+$desktop:          1000px
+$gutter:           10px
+$font-size:        16px
+$font-size-small:  13px
+$font-size-header: 38px
+$line:             $font-size * 1.5
 
 // Colors
-$blue:             #0093D0
-$light-blue:       #99d9eb
-$dark-blue:        #006381
-$yellow:           #ffcf4a
-$light-yellow:     #fff194
-$very-light-gray:  #efefef
-$near-white:       #f8f8f8
-$gray:             #aaaaaa
-$light-gray:       #d6d6d6
-$dark-gray:        #53585e
+$color-text:            #333
+$color-red:             #f00
+$color-gray:            #555
+$color-light-gray:      #aaa
+$color-very-light-gray: #fafafa
+$color-separator:       #eee
 
 // Components
 @import "base"
 @import "mixins"
-@import "header"
-@import "footer"
+@import "sidebar"
 @import "page"
-@import "old"

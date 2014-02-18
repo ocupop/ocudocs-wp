@@ -70,12 +70,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 7, sass/_base.sass */
 ::selection {
+  background: black;
   color: white; }
 
 /* line 11, sass/_base.sass */
 html {
   background-color: white;
-  color: #333333; }
+  color: #333333;
+  font: 16px Georgia, "Times New Roman", Times, sans-serif; }
 
 /* line 16, sass/_base.sass */
 body {
@@ -83,180 +85,177 @@ body {
 
 /* line 19, sass/_base.sass */
 a {
+  border-bottom: 1px dotted #555555;
+  color: #555555;
   text-decoration: none; }
-
-/* line 23, sass/_base.sass */
-strong {
-  font-weight: bold; }
-
-/* line 26, sass/_base.sass */
-em {
-  font-style: italic; }
-
-/* line 29, sass/_base.sass */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  line-height: 1.4; }
-
-/* line 23, sass/_old.sass */
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  position: relative; }
-
-/* line 27, sass/_old.sass */
-a {
-  color: #888888;
-  border-bottom: 1px dotted #888888;
-  text-decoration: none; }
-  /* line 32, sass/_old.sass */
+  /* line 24, sass/_base.sass */
   a:hover {
     color: red;
     border-bottom: 1px dotted red; }
 
-/* line 36, sass/_old.sass */
-input {
-  margin: 0; }
-
-/* line 39, sass/_old.sass */
-html {
-  background: white;
-  color: #333333;
-  font-family: Georgia, serif;
-  font-size: 16px;
-  line-height: 24px; }
-
-/* line 46, sass/_old.sass */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: Helvetica, sans-serif;
-  font-weight: bold;
-  line-height: 1; }
-
-/* line 56, sass/_old.sass */
-h1 {
-  font-size: 38px;
-  margin-bottom: 24px;
-  text-transform: uppercase; }
-
-/* line 61, sass/_old.sass */
-h2 {
-  border-top: 1px solid #eeeeee;
-  font-size: 30px;
-  margin: 24px 0 24px;
-  padding: 24px 0 0; }
-
-/* line 68, sass/_old.sass */
-h3 {
-  color: #666666;
-  font-size: 18px;
-  margin: 30px 0 12px; }
-
-/* line 73, sass/_old.sass */
-p {
-  margin: 24px 0; }
-
-/* line 76, sass/_old.sass */
+/* line 28, sass/_base.sass */
 strong {
   font-weight: bold; }
 
-/* line 79, sass/_old.sass */
+/* line 31, sass/_base.sass */
 em {
   font-style: italic; }
 
-/* line 84, sass/_old.sass */
+/* line 34, sass/_base.sass */
+hr {
+  overflow: hidden;
+  *zoom: 1;
+  border: 0;
+  border-bottom: 1px solid #aaaaaa;
+  clear: both;
+  height: 1px; }
+
+/* line 44, sass/_base.sass */
 .site-container {
   margin: 12px auto;
   max-width: 1000px; }
 
-/* line 88, sass/_old.sass */
+/* line 48, sass/_base.sass */
 .site-sidebar {
   float: left;
   margin-right: 50px;
-  width: 250px; }
+  width: 200px; }
 
-/* line 93, sass/_old.sass */
-header.site-header {
-  font-family: Helvetica, sans-serif;
-  margin-bottom: 12px; }
-  /* line 97, sass/_old.sass */
-  header.site-header span {
-    font-size: 38px;
-    text-transform: uppercase; }
-  /* line 101, sass/_old.sass */
-  header.site-header a,
-  header.site-header a:hover {
-    border-bottom: none;
-    color: inherit; }
-  /* line 106, sass/_old.sass */
-  header.site-header img {
-    vertical-align: middle;
-    width: 40px;
-    opacity: 0.75; }
-
-/* line 112, sass/_old.sass */
-nav.site-nav ul {
-  list-style: none; }
-/* line 116, sass/_old.sass */
-nav.site-nav li a {
-  border-top: 1px dotted #eeeeee;
-  border-bottom: none !important;
-  font-family: Helvetica, sans-serif;
-  font-size: 90%;
-  display: block;
-  margin: 0;
-  padding: 0.25em 0; }
-/* line 125, sass/_old.sass */
-nav.site-nav .children li a {
-  padding-left: 24px; }
-
-/* line 128, sass/_old.sass */
+/* line 53, sass/_base.sass */
 article {
   float: left;
-  width: 700px; }
-  /* line 132, sass/_old.sass */
+  width: 750px; }
+
+/* line 1, sass/_sidebar.sass */
+.site-header {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 8px; }
+  /* line 5, sass/_sidebar.sass */
+  .site-header a,
+  .site-header a:hover {
+    border-bottom: none; }
+  /* line 9, sass/_sidebar.sass */
+  .site-header span {
+    color: #dddddd;
+    font-size: 38px;
+    font-weight: bold;
+    text-transform: uppercase; }
+  /* line 15, sass/_sidebar.sass */
+  .site-header img {
+    vertical-align: -9px;
+    margin-right: 8px;
+    margin-left: -53px;
+    width: 40px;
+    opacity: 0.25; }
+
+/* line 22, sass/_sidebar.sass */
+.site-nav {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px; }
+  /* line 26, sass/_sidebar.sass */
+  .site-nav h2 {
+    border-top: 1px solid #eeeeee;
+    font-weight: bold;
+    margin-top: 8px;
+    padding: 12px 0 4.8px;
+    text-transform: uppercase; }
+    /* line 33, sass/_sidebar.sass */
+    .site-nav h2:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 6px;
+      padding-bottom: 0; }
+  /* line 39, sass/_sidebar.sass */
+  .site-nav ul {
+    list-style: none; }
+  /* line 45, sass/_sidebar.sass */
+  .site-nav ul.clients li.client-title {
+    font-weight: bold;
+    margin-top: 6px; }
+    /* line 49, sass/_sidebar.sass */
+    .site-nav ul.clients li.client-title:first-child {
+      margin-top: 0; }
+  /* line 52, sass/_sidebar.sass */
+  .site-nav ul.clients li ul {
+    margin-left: 12px; }
+  /* line 55, sass/_sidebar.sass */
+  .site-nav a {
+    border-bottom: 0;
+    display: block;
+    margin: 0;
+    padding: 0.25em 0; }
+  /* line 61, sass/_sidebar.sass */
+  .site-nav .children li a {
+    padding-left: 24px; }
+
+/* line 1, sass/_page.sass */
+article {
+  line-height: 1.6; }
+  /* line 4, sass/_page.sass */
+  article h1,
+  article h2,
+  article h3,
+  article h4,
+  article h5,
+  article h6 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    line-height: 1; }
+  /* line 14, sass/_page.sass */
+  article h1 {
+    font-size: 38px;
+    line-height: 1.2;
+    text-transform: uppercase; }
+  /* line 19, sass/_page.sass */
+  article h2 {
+    border-top: 1px solid #eeeeee;
+    color: #555555;
+    font-size: 30px;
+    margin: 24px 0 12px;
+    padding: 24px 0 0; }
+  /* line 26, sass/_page.sass */
+  article h3 {
+    color: #aaaaaa;
+    font-size: 18px;
+    margin: 30px 0 12px; }
+  /* line 31, sass/_page.sass */
+  article hr {
+    margin: 36px 0; }
+  /* line 34, sass/_page.sass */
+  article p {
+    margin: 24px 0; }
+  /* line 37, sass/_page.sass */
+  article h1 + p {
+    margin-top: 18px; }
+  /* line 40, sass/_page.sass */
   article ul,
   article ol {
     margin-left: 24px; }
-  /* line 136, sass/_old.sass */
+  /* line 44, sass/_page.sass */
   article li {
     list-style: square;
     margin: 12px 0; }
-    /* line 140, sass/_old.sass */
+    /* line 48, sass/_page.sass */
     article li li {
       margin: 2.4px 0; }
-
-/* line 143, sass/_old.sass */
-code {
-  background: #eeeeee;
-  border: 1px solid #dddddd;
-  border-radius: 3px;
-  font-size: 13px;
-  margin: 0 0.25em;
-  padding: 2px 4px; }
-
-/* line 151, sass/_old.sass */
-pre code {
-  display: block;
-  font-size: 13px;
-  padding: 10px; }
-
-/* line 156, sass/_old.sass */
-.important {
-  background: #ffff88 url(http://www.mikesfreegifs.com/main4/underconstruction/atwork89.gif) center 50px no-repeat;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  margin: 0 0 2em 0;
-  padding: 1em 1em 100px 1em;
-  text-align: center; }
+  /* line 51, sass/_page.sass */
+  article code {
+    background: #aaaaaa;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    font-size: 13px;
+    margin: 0 0.25em;
+    padding: 2px 4px; }
+  /* line 59, sass/_page.sass */
+  article pre code {
+    display: block;
+    font-size: 13px;
+    padding: 10px; }
+  /* line 64, sass/_page.sass */
+  article .important {
+    background: #ffff88 url(img/under-construction.gif) center 50px no-repeat;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    margin: 0 0 24px 0;
+    padding: 24px 24px 100px 24px;
+    text-align: center; }

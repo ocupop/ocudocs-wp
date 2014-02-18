@@ -1,5 +1,7 @@
 <?php
 
+/* Customizations */
+
 // Never cache.
 nocache_headers();
 
@@ -52,15 +54,58 @@ function remove_menus() {
 add_action('admin_menu', 'remove_menus', 999);
 
 
-/* Shortcodes */
 
-// [[TITLE]]
-// To create an automatic internal link.
-//
-// TODO
-// Check out the functionality of:
-//   http://wordpress.org/plugins/wordpress-wiki-plugin/
-// or
-//   http://wordpress.org/plugins/wordpress-wiki/
+/* Functions */
+
+function list_pages_in_category($categoryName) {
+  $categoryObject = get_category_by_slug($categoryName);
+  $categoryID = $categoryObject->term_id;
+
+  $args = array('posts_per_page'   => -1,
+                'category'         => $categoryID,
+                'orderby'          => 'post_title',
+                'order'            => 'ASC',
+                'post_type'        => 'page',
+                'exclude'          => 5); // Exclude the 'Welcome' page.
+
+  $posts = get_posts($args);
+
+  echo "<ul>";
+  foreach ($posts as $post)
+    echo "<li><a href=\"" . $post->post_name . "\">" . $post->post_title . "</a></li>";
+  echo "</ul>";
+}
+
+function list_clients_and_their_pages() {
+  $client_args = array('posts_per_page'   => -1,
+                       'category'         => 2,
+                       'orderby'          => 'post_title',
+                       'order'            => 'ASC',
+                       'post_type'        => 'page');
+
+  $clients = get_posts($client_args);
+
+  echo "<ul class=\"clients\">";
+  foreach ($clients as $client) {
+    echo "<li class=\"client-title\"><a href=\"" . $client->post_name . "\">" . $client->post_title . "</a></li>";
+    echo "<li>
+            <ul>";
+
+    $client_pages_args = array('posts_per_page'   => -1,
+                               'post_parent'      => $client->ID,
+                               'orderby'          => 'post_title',
+                               'order'            => 'ASC',
+                               'post_type'        => 'page');
+
+    $client_pages = get_posts($client_pages_args);
+
+    foreach($client_pages as $client_page) {
+      echo "<li><a href=\"" . $client_page->post_name . "\">" . $client_page->post_title . "</a></li>";
+    }
+    echo "  </ul>
+          </li>";
+  }
+  echo "</ul>";
+}
 
 ?>

@@ -1,24 +1,29 @@
-// General
+// Basics
 
 *
   position: relative
   @include box-sizing(border-box)
 
 ::selection
-  // background: $blue
+  background: black
   color: white
 
 html
   background-color: white
-  color: #333
-  // font: $font-size $body-font
+  color: $color-text
+  font: $font-size $font-body
 
 body
   width: 100%
 
 a
-  // color: $blue
+  border-bottom: 1px dotted $color-gray
+  color: $color-gray
   text-decoration: none
+
+  &:hover
+    color: $color-red
+    border-bottom: 1px dotted $color-red
 
 strong
   font-weight: bold
@@ -26,12 +31,25 @@ strong
 em
   font-style: italic
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6
-  font-family: $heading-font
-  font-weight: normal
-  line-height: 1.4
+hr
+  @include clearfix
+  border: 0
+  border-bottom: 1px solid $color-light-gray
+  clear: both
+  height: 1px
+
+
+// Layout
+
+.site-container
+  margin: $line/2 auto
+  max-width: $desktop
+
+.site-sidebar
+  float: left
+  margin-right: 50px
+  width: 200px
+
+article
+  float: left
+  width: 750px
