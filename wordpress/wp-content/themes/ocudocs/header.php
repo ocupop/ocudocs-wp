@@ -1,4 +1,8 @@
-<!doctype html>
+<?php
+// Require login.
+if (!is_page('login') && !is_user_logged_in())
+  auth_redirect();
+?><!doctype html>
 <html <?php language_attributes(); ?> class="no-js">
 
 <head>
