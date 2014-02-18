@@ -259,3 +259,24 @@ article {
     margin: 0 0 24px 0;
     padding: 24px 24px 100px 24px;
     text-align: center; }
+
+/* line 72, sass/_page.sass */
+.edit-link {
+  background: #eeeeee;
+  border-radius: 6px;
+  float: right;
+  font-family: dashicons;
+  margin: 8px 8px 0 0;
+  padding: 0 4.8px; }
+  /* line 80, sass/_page.sass */
+  .edit-link a {
+    border-bottom: 0;
+    font-weight: bold;
+    text-transform: uppercase; }
+    /* line 85, sass/_page.sass */
+    .edit-link a:before {
+      content: "\f464";
+      font-size: 18px;
+      font-weight: 400;
+      margin-right: 4.8px;
+      vertical-align: -3px; }
