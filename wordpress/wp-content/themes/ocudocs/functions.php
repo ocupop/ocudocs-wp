@@ -63,7 +63,7 @@ function list_pages_in_category($categoryName) {
 
   $args = array('posts_per_page'   => -1,
                 'category'         => $categoryID,
-                'orderby'          => 'post_title',
+                'orderby'          => 'title',
                 'order'            => 'ASC',
                 'post_type'        => 'page',
                 'exclude'          => 5); // Exclude the 'Welcome' page.
@@ -79,7 +79,7 @@ function list_pages_in_category($categoryName) {
 function list_clients_and_their_pages() {
   $client_args = array('posts_per_page'   => -1,
                        'category'         => 2,
-                       'orderby'          => 'post_title',
+                       'orderby'          => 'title',
                        'order'            => 'ASC',
                        'post_type'        => 'page');
 
