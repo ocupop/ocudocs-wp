@@ -124,7 +124,9 @@ hr {
 /* line 53, sass/_base.sass */
 article {
   float: left;
-  width: 750px; }
+  width: 750px;
+  max-width: 100%;
+  padding: 20px; }
 
 /* line 1, sass/_sidebar.sass */
 .site-header {
@@ -298,3 +300,52 @@ article {
     /* line 106, sass/_page.sass */
     #toc_container .toc_list a {
       border: 0; }
+
+
+.site-header .menu {
+  display: none;
+}
+
+@media(max-width: 1000px) {
+  .site-sidebar {
+    position: fixed;
+    background: white;
+    z-index: 9;
+    padding: 20px;
+    padding-top: 0;
+    margin: 0;
+    width: 100%;
+    top: 0;
+    height: 50px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+  }
+  .site-header {
+    position: relative;
+  }
+  .site-header img {
+    margin-left: 0;
+    vertical-align: middle;
+  }
+  .site-header span {
+    font-size: 22px;
+    line-height: 50px;
+  }
+  .site-header .menu {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #555555;
+    color: #ffffff;
+  }
+  body.open-menu .site-sidebar {
+    bottom: 0;
+    height: 100%;
+    overflow-y: auto;
+  }
+}
