@@ -13,3 +13,10 @@
   <h2 id="nav-clients">Clients</h2>
   <?php list_clients_and_their_pages(); ?>
 </nav>
+<script type="text/javascript">
+  $(document).on('ready', function() {
+    $('.site-header').on('click', function(){ 
+      $('body').toggleClass('open-menu');
+    });
+  });
+</script>

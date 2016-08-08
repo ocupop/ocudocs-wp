@@ -37,6 +37,7 @@ if (!is_page('login') && !is_user_logged_in())
           <img src="<?php bloginfo('template_url'); ?>/img/ocupop.png">
           <span>Ocudocs</span>
         </a>
+        <span class="menu">Menu</span>
       </header>
 
       <?php get_sidebar(); ?>
